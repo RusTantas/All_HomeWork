@@ -58,7 +58,7 @@ async def add(massage):
 
 @dp.callback_query_handler(text = 'info')
 async def infor(call):
-    photo_file = open('Формула расчета.jpg', 'rb')
+    photo_file = open('КАЧАТЬ ВМЕСТЕ С modul_13_6.jpg', 'rb')
     await call.message.answer_photo(photo_file)
     await call.answer()
 
