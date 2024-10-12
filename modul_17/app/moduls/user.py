@@ -1,7 +1,7 @@
-from Urban.modul_17.app.backend.db import Base
+from app.backend.db import Base
 from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 from sqlalchemy.orm import relationship
-from task import *
+from app.models import *
 
 
 class User(Base):
@@ -16,6 +16,6 @@ class User(Base):
     tasks = relationship("Task", back_populates="user")
 
 
-
 from sqlalchemy.schema import CreateTable
+
 print(CreateTable(User.__table__))
