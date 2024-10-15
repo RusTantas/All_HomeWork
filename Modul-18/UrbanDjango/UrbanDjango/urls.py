@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from task3.views import main_paige, second_paige, third_paige
+from task4.views import main_paige, second_paige, third_paige
 from django.views.generic import TemplateView
 
 urlpatterns = [

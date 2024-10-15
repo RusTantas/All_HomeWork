@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <pagename>
+        {% block pagename %}
+        <h1> {{ title }} </h1>
+        {% endblock %}
+     </pagename>
+
+
+    <menu>
+        {% block menu %}
+       <h3> <a href=/#> Главная</a> </h3>
+
+       <h3> <a href="/second_paige/"> Магазин </a> </h3>
+
+       <h3> <a href="/third_paige/"> Корзина</a>  </h3>
+          {% endblock %}
+
+    </menu>
+
+
+    <content>
+         {% block  content %}
+              <ul>
+
+              </ul>
+
+          {% endblock %}
+
+    </content>
+
+<back>
+{% block  back %}
+<button> <a href=/#> {{ button_text_4}}</a>  </button>
+{% endblock %}
+</back>
+
+</body>
+</html>
+
