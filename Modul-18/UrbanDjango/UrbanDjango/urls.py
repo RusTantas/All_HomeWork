@@ -16,12 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from task4.views import main_paige, second_paige, third_paige
+from task5.views import sign_up_by_html, sign_up_by_django
 from django.views.generic import TemplateView
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main_paige),
-    path('second_paige/', second_paige),
-    path('third_paige/', third_paige)
+    path('', sign_up_by_html),
+    path('django/', sign_up_by_django)
+
+
 ]
