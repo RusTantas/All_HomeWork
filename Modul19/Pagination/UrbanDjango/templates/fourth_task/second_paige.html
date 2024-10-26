@@ -1,0 +1,30 @@
+{% extends 'menu.html' %}
+
+
+{% block pagename %}
+{{ block.super}}
+{% endblock %}
+
+
+{% block menu %}
+
+{% endblock %}
+
+
+{% block  content %}
+
+{% for i in list_1 %}
+<li> {{i}} <button>{{ button_text_1 }} </button></li>
+{% endfor %}
+{% endblock %}
+
+
+
+ {% block  back %}
+
+{{ block.super}}
+{% endblock %}
+
+
+
+
